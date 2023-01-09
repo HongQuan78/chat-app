@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <title>Chat App</title>
+  </head>
+  <body>
+    <form id="login-form">
+      <input type="text" id="username" placeholder="Enter username..." />
+      <button type="submit">Join chat</button>
+    </form>
+    <div id="chat-input">
+      <ul id="messages"></ul>
+      <div id="chat">
+        <form id="chat-form">
+          <input type="text" id="message" placeholder="Enter message..." />
+          <button type="submit">Send</button>
+        </form>
+      </div>
+      <div id="typing"></div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
